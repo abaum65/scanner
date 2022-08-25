@@ -34,7 +34,7 @@ def main():
         print('-s is required')
         sys.exit()
     else:
-        subnet = args.subnet
+        subnet = args.subnet.subnet.replace('/', '')
     if not args.timing:
         timing = str(2)
     else:
