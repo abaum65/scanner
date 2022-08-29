@@ -1,0 +1,155 @@
+# Nmap 7.80 scan initiated Mon Aug 29 08:20:02 2022 as: /usr/bin/nmap -oX - --top-ports 10 -O -sV --script=default,safe -T4 -Pn -oN 173.12.58.15329.full.txt
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     IP Offered: 192.168.1.68
+|     Server Identifier: 192.168.1.1
+|     Subnet Mask: 255.255.255.0
+|     Domain Name: localdomain
+|     Broadcast Address: 192.168.1.255
+|     Domain Name Server: 192.168.1.1
+|_    Router: 192.168.1.1
+| broadcast-dns-service-discovery: 
+|   224.0.0.251
+|     0/tcp printer
+|       Address=192.168.4.218 fe80::7274:14ff:fe8c:a7e2
+|     22/tcp sftp-ssh
+|       Address=192.168.1.1 fe80::7845:58ff:fefb:225a
+|     22/tcp ssh
+|       Address=192.168.1.1 fe80::7845:58ff:fefb:225a
+|     80/tcp privet
+|       txtvers=1
+|       UUID=564e4252-4e43-3033-4343-842afdf17389
+|       Address=192.168.4.25 fe80::5eba:efff:fee7:dcf
+|     80/tcp http
+|       Address=192.168.4.25 fe80::5eba:efff:fee7:dcf
+|     443/tcp uscans
+|       txtvers=1
+|       adminurl=https://NPIF17389.local.
+|       ty=HP ColorLaserJet MFP M282-M285
+|       mfg=HP
+|       mdl=ColorLaserJet MFP M282-M285
+|       usb_MFG=HP
+|       usb_MDL=HP ColorLaserJet MFP M282-M285
+|       vers=2.63
+|       representation=https://NPIF17389.local./ipp/images/printer.png
+|       rs=eSCL
+|       uuid=564e4252-4e43-3033-4343-842afdf17389
+|       Address=192.168.4.25 fe80::5eba:efff:fee7:dcf
+|     515/tcp printer
+|       UUID=564e4252-4e43-3033-4343-842afdf17389
+|       txtvers=1
+|       qtotal=1
+|       rp=RAW
+|       ty=HP ColorLaserJet MFP M282-M285
+|       Address=192.168.4.25 fe80::5eba:efff:fee7:dcf
+|     631/tcp ipps
+|       txtvers=1
+|       qtotal=1
+|       pdl=image/urf,application/PCLm,application/octet-stream,application/pdf,application/postscript,application/vnd.hp-PCL,application/vnd.hp-PCLXL,image/jpeg
+|       rp=ipp/print
+|       rfo=ipp/faxout
+|       URF=V1.4,CP99,W8,OB10,PQ3-4-5,ADOBERGB24,DEVRGB24,DEVW8,SRGB24,DM1,IS1,MT1-2-3-5-12,RS600
+|       ty=HP ColorLaserJet MFP M282-M285
+|       product=(HP ColorLaserJet MFP M282-M285)
+|       priority=10
+|       adminurl=https://NPIF17389.local./hp/device/info_config_AirPrint.html?tab=Networking&menu=AirPrintStatus
+|       note=
+|       Color=T
+|       Duplex=T
+|       Scan=T
+|       Fax=T
+|       UUID=564e4252-4e43-3033-4343-842afdf17389
+|       kind=document,envelope,photo
+|       Address=192.168.4.25 fe80::5eba:efff:fee7:dcf
+|     631/tcp ipps
+|       Address=192.168.4.218 fe80::7274:14ff:fe8c:a7e2
+|     631/tcp http
+|       Address=192.168.4.218 fe80::7274:14ff:fe8c:a7e2
+|     631/tcp ipp
+|       Address=192.168.4.218 fe80::7274:14ff:fe8c:a7e2
+|     631/tcp ipp
+|       txtvers=1
+|       qtotal=1
+|       pdl=image/urf,application/PCLm,application/octet-stream,application/pdf,application/postscript,application/vnd.hp-PCL,application/vnd.hp-PCLXL,image/jpeg
+|       rp=ipp/print
+|       rfo=ipp/faxout
+|       URF=V1.4,CP99,W8,OB10,PQ3-4-5,ADOBERGB24,DEVRGB24,DEVW8,SRGB24,DM1,IS1,MT1-2-3-5-12,RS600
+|       ty=HP ColorLaserJet MFP M282-M285
+|       product=(HP ColorLaserJet MFP M282-M285)
+|       priority=10
+|       adminurl=http://NPIF17389.local./hp/device/info_config_AirPrint.html?tab=Networking&menu=AirPrintStatus
+|       note=
+|       Color=T
+|       Duplex=T
+|       Scan=T
+|       Fax=T
+|       UUID=564e4252-4e43-3033-4343-842afdf17389
+|       kind=document,envelope,photo
+|       Address=192.168.4.25 fe80::5eba:efff:fee7:dcf
+|     8080/tcp uscan
+|       txtvers=1
+|       adminurl=http://NPIF17389.local.
+|       ty=HP ColorLaserJet MFP M282-M285
+|       mfg=HP
+|       mdl=ColorLaserJet MFP M282-M285
+|       usb_MFG=HP
+|       usb_MDL=HP ColorLaserJet MFP M282-M285
+|       vers=2.63
+|       representation=http://NPIF17389.local./ipp/images/printer.png
+|       rs=eSCL
+|       uuid=564e4252-4e43-3033-4343-842afdf17389
+|       Address=192.168.4.25 fe80::5eba:efff:fee7:dcf
+|     8080/tcp print-caps
+|       Address=192.168.4.25 fe80::5eba:efff:fee7:dcf
+|     8080/tcp http-alt
+|       Address=192.168.4.25 fe80::5eba:efff:fee7:dcf
+|     8289/tcp scanner
+|       UUID=564e4252-4e43-3033-4343-842afdf17389
+|       txtvers=1
+|       adminurl=http://NPIF17389.local.
+|       ty=HP ColorLaserJet MFP M282-M285
+|       Address=192.168.4.25 fe80::5eba:efff:fee7:dcf
+|     9100/tcp pdl-datastream
+|       UUID=564e4252-4e43-3033-4343-842afdf17389
+|       txtvers=1
+|       qtotal=1
+|       ty=HP ColorLaserJet MFP M282-M285
+|       Address=192.168.4.25 fe80::5eba:efff:fee7:dcf
+|     9100/tcp pdl-datastream
+|       ty=Rollo X1040 Label Printer
+|       adminurl=http://rollo-8c-a7-e2.local:631/
+|       note=
+|       pdl=image/pwg-raster,image/urf,application/vnd.rollo-pdl,application/pdf,application/vnd.rollo-mfg-test,application/vnd.rollo-test,image/png
+|       UUID=39bfad5c-a9eb-33c5-4613-e466bf055dab
+|       Color=F
+|       Duplex=F
+|       txtvers=1
+|       qtotal=1
+|       Address=192.168.4.218
+|     42411/tcp hap
+|_      Address=192.168.3.208 fe80::4661:32ff:fed7:21e5
+| broadcast-igmp-discovery: 
+|   192.168.1.1
+|     Interface: eno1
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.1.254
+|     Interface: eno1
+|     Version: 2
+|     Group: 233.89.188.1
+|     Description: GLOP Block (rfc3180)
+|   192.168.1.254
+|     Interface: eno1
+|     Version: 2
+|     Group: 239.254.127.63
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+| broadcast-listener: 
+|_  udp
+|_eap-info: please specify an interface with -e
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Mon Aug 29 08:20:43 2022 -- 0 IP addresses (0 hosts up) scanned in 41.04 seconds

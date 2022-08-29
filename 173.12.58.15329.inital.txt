@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Aug 29 08:20:01 2022 as: /usr/bin/nmap -oX - --top-ports 10 -T4 -Pn -oN 173.12.58.15329.inital.txt 173.12.58.15329
+Failed to resolve "173.12.58.15329".
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Mon Aug 29 08:20:01 2022 -- 0 IP addresses (0 hosts up) scanned in 0.02 seconds

@@ -34,13 +34,13 @@ def main():
         print('-s is required')
         sys.exit()
     else:
-        subnet = args.subnet.replace('/', '')
+        subnet = args.subnet
     if not args.timing:
         timing = str(2)
     else:
         timing = str(args.timing)
     if not args.file_prefix:
-        prefix = subnet
+        prefix = subnet.replace('/', '')
     else:
         prefix = args.file_prefix
     print("start")
